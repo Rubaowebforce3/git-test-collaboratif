@@ -19,7 +19,7 @@ class Manager extends Employe implements Directeur
 
     public function afficherRDV()
     {
-        echo "$this->prenom  $this->nom: j'ai rendez vous avec $this->client";
+        echo parent::getPrenom() . " " . parent::getNom() . " : j'ai rendez vous avec $this->client";
     }
 
 }
